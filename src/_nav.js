@@ -223,48 +223,48 @@ const _nav = [
     name: 'Forms',
     icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
     items: [
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Autocomplete'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/autocomplete/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Autocomplete'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/autocomplete/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
       {
         component: CNavItem,
         name: 'Checks & Radios',
         to: '/forms/checks-radios',
       },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Date Picker'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/date-picker/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
-      {
-        component: CNavItem,
-        name: 'Date Range Picker',
-        href: 'https://coreui.io/react/docs/forms/date-range-picker/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Date Picker'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/date-picker/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
+      // {
+      //   component: CNavItem,
+      //   name: 'Date Range Picker',
+      //   href: 'https://coreui.io/react/docs/forms/date-range-picker/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
       {
         component: CNavItem,
         name: 'Floating Labels',
@@ -280,100 +280,100 @@ const _nav = [
         name: 'Input Group',
         to: '/forms/input-group',
       },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Multi Select'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/multi-select/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Password Input'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/password-input/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Multi Select'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/multi-select/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Password Input'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/password-input/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
       {
         component: CNavItem,
         name: 'Range',
         to: '/forms/range',
       },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Range Slider'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/range-slider/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Rating'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/rating/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Range Slider'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/range-slider/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Rating'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/rating/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
       {
         component: CNavItem,
         name: 'Select',
         to: '/forms/select',
       },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Stepper'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/stepp/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
-      {
-        component: CNavItem,
-        name: (
-          <React.Fragment>
-            {'Time Picker'}
-            <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
-          </React.Fragment>
-        ),
-        href: 'https://coreui.io/react/docs/forms/time-picker/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Stepper'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/stepp/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
+      // {
+      //   component: CNavItem,
+      //   name: (
+      //     <React.Fragment>
+      //       {'Time Picker'}
+      //       <CIcon icon={cilExternalLink} size="sm" className="ms-2" />
+      //     </React.Fragment>
+      //   ),
+      //   href: 'https://coreui.io/react/docs/forms/time-picker/',
+      //   badge: {
+      //     color: 'danger',
+      //     text: 'PRO',
+      //   },
+      // },
       {
         component: CNavItem,
         name: 'Layout',
