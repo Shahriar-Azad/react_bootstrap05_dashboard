@@ -1,82 +1,91 @@
 import React from 'react'
-import { CCard, CCardBody, CCardHeader, CCol, CFormLabel, CFormRange, CRow } from '@coreui/react'
-import { DocsComponents, DocsExample } from 'src/components'
 
 const Range = () => {
   return (
-    <CRow>
-      <CCol xs={12}>
-        <DocsComponents href="forms/range/" />
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Range</strong> <small></small>
-          </CCardHeader>
-          <CCardBody>
-            <p className="text-body-secondary small">
-              Create custom <code>&lt;input type=&#34;range&#34;&gt;</code> controls with{' '}
-              <code>&lt;CFormRange&gt;</code>.
-            </p>
-            <DocsExample href="forms/range" tabContentClassName="bg-opacity-10">
-              <CFormLabel htmlFor="customRange1">Example range</CFormLabel>
-              <CFormRange id="customRange1" />
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={12}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Range</strong> <small>Disabled</small>
-          </CCardHeader>
-          <CCardBody>
-            <p className="text-body-secondary small">
-              Add the <code>disabled</code> boolean attribute on an input to give it a grayed out
-              appearance and remove pointer events.
-            </p>
-            <DocsExample href="forms/range#disabled" tabContentClassName="bg-opacity-10">
-              <CFormLabel htmlFor="disabledRange">Disabled range</CFormLabel>
-              <CFormRange id="disabledRange" disabled />
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={12}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Range</strong> <small>Min and max</small>
-          </CCardHeader>
-          <CCardBody>
-            <p className="text-body-secondary small">
-              Range inputs have implicit values for <code>min</code> and <code>max</code>—
-              <code>0</code> and <code>100</code>, respectively. You may specify new values for
-              those using the <code>min</code> and <code>max</code> attributes.
-            </p>
-            <DocsExample href="forms/range#min-and-max" tabContentClassName="bg-opacity-10">
-              <CFormLabel htmlFor="customRange2">Example range</CFormLabel>
-              <CFormRange min={0} max={5} defaultValue="3" id="customRange2" />
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={12}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Range</strong> <small>Steps</small>
-          </CCardHeader>
-          <CCardBody>
-            <p className="text-body-secondary small">
-              By default, range inputs &#34;snap&#34; to integer values. To change this, you can
-              specify a <code>step</code> value. In the example below, we double the number of steps
-              by using <code>step=&#34;0.5&#34;</code>.
-            </p>
-            <DocsExample href="forms/range#steps" tabContentClassName="bg-opacity-10">
-              <CFormLabel htmlFor="customRange3">Example range</CFormLabel>
-              <CFormRange min={0} max={5} step={0.5} defaultValue="3" id="customRange3" />
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-    </CRow>
+    <div className="container mt-4">
+      <h2>React Range Examples</h2>
+
+      {/* Example Range */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>Example Range</strong>
+        </div>
+        <div className="card-body">
+          <p className="text-muted small">
+            Create custom <code>&lt;input type="range"&gt;</code> controls easily.
+          </p>
+          <label htmlFor="customRange1" className="form-label">
+            Example range
+          </label>
+          <input type="range" className="form-range" id="customRange1" />
+        </div>
+      </div>
+
+      {/* Disabled Range */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>Disabled Range</strong>
+        </div>
+        <div className="card-body">
+          <p className="text-muted small">
+            Add the <code>disabled</code> attribute to make it grayed out and non-interactive.
+          </p>
+          <label htmlFor="disabledRange" className="form-label">
+            Disabled range
+          </label>
+          <input type="range" className="form-range" id="disabledRange" disabled />
+        </div>
+      </div>
+
+      {/* Min and Max */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>Min and Max</strong>
+        </div>
+        <div className="card-body">
+          <p className="text-muted small">
+            By default, range inputs go from <code>0</code> to <code>100</code>. You can customize
+            these values using <code>min</code> and <code>max</code>.
+          </p>
+          <label htmlFor="customRange2" className="form-label">
+            Example range
+          </label>
+          <input
+            type="range"
+            className="form-range"
+            min="0"
+            max="5"
+            defaultValue="3"
+            id="customRange2"
+          />
+        </div>
+      </div>
+
+      {/* Steps */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>Steps</strong>
+        </div>
+        <div className="card-body">
+          <p className="text-muted small">
+            Range inputs snap to integer values by default. Use the <code>step</code> attribute to
+            control the intervals.
+          </p>
+          <label htmlFor="customRange3" className="form-label">
+            Example range
+          </label>
+          <input
+            type="range"
+            className="form-range"
+            min="0"
+            max="5"
+            step="0.5"
+            defaultValue="3"
+            id="customRange3"
+          />
+        </div>
+      </div>
+    </div>
   )
 }
 

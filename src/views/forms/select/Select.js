@@ -1,99 +1,101 @@
 import React from 'react'
-import { CCard, CCardBody, CCardHeader, CCol, CFormSelect, CRow } from '@coreui/react'
-import { DocsComponents, DocsExample } from 'src/components'
 
 const Select = () => {
   return (
-    <CRow>
-      <CCol xs={12}>
-        <DocsComponents href="forms/select/" />
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Select</strong> <small>Default</small>
-          </CCardHeader>
-          <CCardBody>
-            <DocsExample href="forms/select">
-              <CFormSelect aria-label="Default select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </CFormSelect>
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={12}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Select</strong> <small>Sizing</small>
-          </CCardHeader>
-          <CCardBody>
-            <p className="text-body-secondary small">
-              You may also choose from small and large custom selects to match our similarly sized
-              text inputs.
-            </p>
-            <DocsExample href="forms/select#sizing">
-              <CFormSelect size="lg" className="mb-3" aria-label="Large select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </CFormSelect>
-              <CFormSelect size="sm" className="mb-3" aria-label="Small select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </CFormSelect>
-            </DocsExample>
-            <p className="text-body-secondary small">
-              The <code>multiple</code> attribute is also supported:
-            </p>
-            <DocsExample href="forms/select#sizing">
-              <CFormSelect size="lg" multiple aria-label="Multiple select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </CFormSelect>
-            </DocsExample>
-            <p className="text-body-secondary small">
-              As is the <code>htmlSize</code> property:
-            </p>
-            <DocsExample href="forms/select#sizing">
-              <CFormSelect size="lg" multiple aria-label="Multiple select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </CFormSelect>
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={12}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            <strong>React Select</strong> <small>Disabled</small>
-          </CCardHeader>
-          <CCardBody>
-            <p className="text-body-secondary small">
-              Add the <code>disabled</code> boolean attribute on a select to give it a grayed out
-              appearance and remove pointer events.
-            </p>
-            <DocsExample href="forms/select#disabled">
-              <CFormSelect aria-label="Disabled select example" disabled>
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </CFormSelect>
-            </DocsExample>
-          </CCardBody>
-        </CCard>
-      </CCol>
-    </CRow>
+    <div className="container mt-4">
+      <h2>React Select Examples</h2>
+
+      {/* Default Select */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>React Select</strong> <small>Default</small>
+        </div>
+        <div className="card-body">
+          <label htmlFor="defaultSelect" className="form-label">
+            Default select
+          </label>
+          <select className="form-select" id="defaultSelect" aria-label="Default select example">
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Sizing */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>React Select</strong> <small>Sizing</small>
+        </div>
+        <div className="card-body">
+          <p className="text-muted small">
+            You can choose from small and large selects to match input sizes.
+          </p>
+
+          <label htmlFor="largeSelect" className="form-label">
+            Large select
+          </label>
+          <select className="form-select form-select-lg mb-3" id="largeSelect">
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <label htmlFor="smallSelect" className="form-label">
+            Small select
+          </label>
+          <select className="form-select form-select-sm mb-3" id="smallSelect">
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <p className="text-muted small">
+            The <code>multiple</code> attribute allows selecting multiple options:
+          </p>
+          <select className="form-select form-select-lg mb-3" multiple>
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <p className="text-muted small">
+            You can also use the <code>size</code> property to define visible options:
+          </p>
+          <select className="form-select mb-3" size="3">
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Disabled Select */}
+      <div className="card mb-4">
+        <div className="card-header">
+          <strong>React Select</strong> <small>Disabled</small>
+        </div>
+        <div className="card-body">
+          <p className="text-muted small">
+            Add the <code>disabled</code> attribute to disable the select field.
+          </p>
+          <label htmlFor="disabledSelect" className="form-label">
+            Disabled select
+          </label>
+          <select className="form-select" id="disabledSelect" disabled>
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </div>
   )
 }
 
