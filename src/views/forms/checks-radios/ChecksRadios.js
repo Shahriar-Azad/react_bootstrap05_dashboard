@@ -3,7 +3,6 @@ import React from 'react'
 const ChecksRadios = () => {
   return (
     <div className="container my-4">
-      {/* Checkboxes */}
       <div className="card mb-4">
         <div className="card-header">
           <strong>React Checkbox</strong>

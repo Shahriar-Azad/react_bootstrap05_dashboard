@@ -308,11 +308,11 @@ const _nav = [
       //     text: 'PRO',
       //   },
       // },
-      {
-        component: CNavItem,
-        name: 'Range',
-        to: '/forms/range',
-      },
+      // {
+      //   component: CNavItem,
+      //   name: 'Range',
+      //   to: '/forms/range',
+      // },
       // {
       //   component: CNavItem,
       //   name: (
@@ -379,11 +379,11 @@ const _nav = [
         name: 'Layout',
         to: '/forms/layout',
       },
-      {
-        component: CNavItem,
-        name: 'Validation',
-        to: '/forms/validation',
-      },
+      // {
+      //   component: CNavItem,
+      //   name: 'Validation',
+      //   to: '/forms/validation',
+      // },
     ],
   },
   // {
